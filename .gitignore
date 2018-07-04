@@ -47,3 +47,13 @@ bower.json
 # Ignore node_modules
 node_modules/
 
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+
+# Ignore Compiled files
+/public/packs
+/public/packs-test
+
+# Ignore Yarn Logs
+yarn-debug.log*
+.yarn-integrity

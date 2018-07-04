@@ -28,7 +28,7 @@ Trace:
 
 npm manifest: 
   {
-    "name": "whencaniretire",
+    "name": "howlongbeforeiretire",
     "private": true,
     "dependencies": {
       "@rails/webpacker": "3.5"

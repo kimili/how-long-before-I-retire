@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+still_working:
+  name: Warren Buffet
+  display_initials: false
+  retirement_date: <%= 3.years.from_now.to_datetime %>
+
+almost_there:
+  name: Almost There
+  display_initials: true
+  retirement_date: <%= 15.days.from_now.to_datetime %>
+
+already_retired:
+  name: Larry Leisure
+  display_initials: false
+  retirement_date: <%= 6.months.ago.to_datetime %>

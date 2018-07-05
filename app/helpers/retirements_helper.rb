@@ -1,4 +1,4 @@
-module RetirementHelper
+module RetirementsHelper
 
   def time_difference_from_now(end_time, format = :sentence)
     start_time = Time.current.to_time
@@ -23,4 +23,9 @@ module RetirementHelper
     return components.join('-') if format == :score
     components.to_sentence
   end
+end
+
+def retirement_name(retirement = @retirement)
+  return retirement.name unless retirement.display_initials?
+  retirement.name.split.map{ |v| "#{v[0].upcase}." }.join(' ')
 end

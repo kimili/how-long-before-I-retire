@@ -1,0 +1,19 @@
+<% content_for :title, "Retirement Countdown for #{retirement_name}" %>
+
+<%= component 'page' do %>
+  <% if @retirement.retired? %>
+    <h1>
+      You’re Retired!
+    </h1>
+    <p>
+      <%= retirement_name %>, go out and enjoy your sweet freedom from the grind of work!
+    </p>
+  <% else %>
+    <h1>
+      <%= time_difference_from_now @retirement.retirement_date %>!
+    </h1>
+    <p>
+      <%= retirement_name %>, that’s how long you have until you retire!
+    </p>
+  <% end %>
+<% end %>

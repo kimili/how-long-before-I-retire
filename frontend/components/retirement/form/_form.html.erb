@@ -1,0 +1,16 @@
+<%= component 'common/form_errors', errors: @retirement.errors %>
+
+<%= form_for @retirement do |f| %>
+
+  <div class="input-field">
+    <%= f.label :name %>
+    <%= f.text_field :name, required: 'required', maxlength: 255 %>
+  </div>
+
+  <div class="input-field">
+    <%= f.label :retirement_date %>
+    <%= f.date_field :retirement_date, required: 'required' %>
+  </div>
+
+  <%= f.button %>
+<% end %>

@@ -24,6 +24,10 @@ header[role="banner"]::after {
 	z-index: -1;
 }
 
+header[role="banner"] h1 {
+	margin: 0;
+}
+
 .branding {
 	display: inline-block;
 	border: none;

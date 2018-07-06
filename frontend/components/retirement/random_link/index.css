@@ -1,0 +1,35 @@
+@import "../../../init/config/colors.css";
+
+.random-retirement {
+	text-align: center;
+	padding-top: 4rem;
+	margin-top: 4rem;
+	position: relative;
+}
+
+.random-retirement::before,
+.random-retirement::after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%) rotate(-15deg);
+	transform-origin: center;
+}
+
+.random-retirement::before {
+	top: -8px;
+	width: 8px;
+	height: 18px;
+	background: var(--nebula-dark);
+}
+
+.random-retirement::after {
+	width: 8px;
+	top: -5px;
+	height: 8px;
+	border-radius: 8px;
+	background-color: var(--nebula-dark);
+	border: 2px solid var(--nebula-dark);
+	box-shadow: 0 0 0 1px var(--tidal), 0 0 0 3px #fff inset;
+}

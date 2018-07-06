@@ -28,7 +28,7 @@ button {
 	font-size: 1.6rem;
 	text-transform: uppercase;
 	letter-spacing: 0.04em;
-	font-weight: inherit;
+	font-weight: 700;
 	text-align: center;
 	text-decoration: none;
 	color: var(--nebula-dark);
@@ -39,7 +39,7 @@ button {
 	border-color: var(--nebula-light);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 	height: 5.4rem;
-	line-height: calc(5.4rem - 2px);
+	line-height: 5.5rem; /* The font needs a little x-height adjustment */
 	user-select: none;
 	vertical-align: middle;
 	white-space: nowrap;
@@ -53,22 +53,26 @@ button {
 	box-sizing: border-box;
 	max-width: 100%;
 	outline: none;
-	transition: all 120ms ease-in-out;
+	transition: all 80ms ease-in-out;
 }
 
 @media screen and (min-width: 600px) {
 	button {
-		font-size: 2rem;
+		font-size: 1.9rem;
 	}
 }
 
 @media screen and (min-width: 768px) {
 	button {
-		font-size: 2.4rem;
+		font-size: 2.2rem;
 	}
 }
 
 button:hover,
 button:focus {
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
 }

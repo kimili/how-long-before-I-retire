@@ -44,5 +44,13 @@ a {
 	text-decoration: none;
 	display: inline-block;
 	position: relative;
-	border-bottom: 3px solid var(--tidal-dark);
+	border-bottom: 1px solid var(--tidal-dark);
+	outline: none;
+	transition: all 80ms ease-in-out;
+}
+
+a:hover,
+a:focus {
+	border-bottom-width: 4px;
+	margin-bottom: -3px;
 }

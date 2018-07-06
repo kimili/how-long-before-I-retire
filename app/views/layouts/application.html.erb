@@ -11,11 +11,23 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <link rel="stylesheet" href="https://use.typekit.net/nzv5pog.css">
     <%= stylesheet_pack_tag 'application' %>
+
+    <%= favicon_link_tag asset_pack_path('images/favicon.ico') %>
+    <link rel="mask-icon" href="<%= asset_pack_path('images/favicon.svg') %>" color="#465353">
+
   </head>
 
   <body>
-    <%= yield %>
+    <div class="page-content">
+      <%= component 'common/header' %>
+      <%= component 'page' do %>
+        <%= yield %>
+      <% end %>
+    </div>
+
+    <%= component 'common/footer' %>
   </body>
 
   <%= javascript_pack_tag 'application' %>

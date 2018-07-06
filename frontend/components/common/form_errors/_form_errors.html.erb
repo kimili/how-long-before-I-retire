@@ -1,11 +1,11 @@
 <% return unless errors.any? %>
 <div class="form_errors">
-  <h2 class="form_errors__header">
-    Please fix the following <%= pluralize(errors.count, "error") %>:
-  </h2>
-  <ul class="form_errors__list">
+  <h3>
+    Oh man, you gotta fix these <%= pluralize(errors.count, "error") %>:
+  </h3>
+  <ul>
   <% errors.full_messages.each do |msg| %>
-    <li class="form_errors__error"><%= msg %></li>
+    <li><%= msg %></li>
   <% end %>
   </ul>
 </div>

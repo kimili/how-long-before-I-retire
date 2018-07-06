@@ -1,18 +1,48 @@
 @import "normalize.css/normalize.css";
+@import "config/colors.css";
+
+* {
+	box-sizing: border-box;
+}
 
 html {
 	font-size: 62.5%;
+	height: 100%;
 }
 
 body {
 	font-size: 1.6rem;
 	line-height: 1.5;
 	font-weight: 400;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-		Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif,
-		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-	color: #444;
+	font-family: "ff-ernestine-pro", serif;
+	color: var(--nebula-dark);
 	font-variant-numeric: oldstyle-nums;
 	text-rendering: optimizeLegibility;
+	min-height: 100%;
 	-webkit-font-smoothing: antialiased;
+	/* background-image: linear-gradient(25deg, #c5dada, #d0e2c7, #d8eab4, #e0f2a0); */
+	/* background-image: linear-gradient(-25deg, #c5dada, #d0e2c7, #d8eab4, #EFFDBC); */
+	/* background-image: linear-gradient(-25deg, rgb(189, 211, 119), rgb(224, 242, 160), rgb(239, 253, 188)); */
+	background-image: linear-gradient(
+		-25deg,
+		var(--tidal-medium),
+		var(--tidal),
+		var(--tidal-light)
+	);
+	display: grid;
+	grid-template-rows: 1fr auto;
+}
+
+footer[role="contentinfo"] {
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+
+/* Links */
+a {
+	color: var(--nebula-dark);
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	border-bottom: 3px solid var(--tidal-dark);
 }

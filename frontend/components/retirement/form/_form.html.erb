@@ -1,16 +1,22 @@
 <%= component 'common/form_errors', errors: @retirement.errors %>
 
-<%= form_for @retirement do |f| %>
+<%= form_for @retirement, html: { class: 'retirement-form', id: nil } do |f|%>
 
-  <div class="input-field">
-    <%= f.label :name %>
-    <%= f.text_field :name, required: 'required', maxlength: 255 %>
-  </div>
-
-  <div class="input-field">
-    <%= f.label :retirement_date %>
-    <%= f.date_field :retirement_date, required: 'required' %>
-  </div>
+  <p>
+    My name is<wbr>
+    <%= f.label :name do |label| %>
+      <span><%= label.translation %></span>
+      <%= f.text_field :name, required: 'required', maxlength: 255, autofocus: true %>
+    <% end %>
+    <wbr>
+    and I want to retire on<wbr>
+    <span class="nowrap">
+      <%= f.label :retirement_date do |label|  %>
+        <span><%= label.translation %></span>
+        <%= f.date_field :retirement_date, required: 'required' %>
+      <% end %>.
+    </span>
+  </p>
 
   <%= f.button %>
 <% end %>

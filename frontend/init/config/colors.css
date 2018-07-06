@@ -1,0 +1,11 @@
+:root {
+	--tidal-light: hsl(73, 91%, 87%);
+	--tidal: hsl(73, 73%, 79%);
+	--tidal-medium: hsl(73, 49%, 65%);
+	--tidal-dark: hsl(73, 38%, 52%);
+
+	--nebula-light: hsl(180, 37%, 91%);
+	--nebula: hsl(180, 21%, 82%);
+	--nebula-medium: hsl(180, 11%, 54%);
+	--nebula-dark: hsl(180, 8%, 30%);
+}

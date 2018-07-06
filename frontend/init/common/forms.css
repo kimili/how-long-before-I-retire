@@ -1,0 +1,74 @@
+@import "../config/colors.css";
+
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+input {
+	display: inline-block;
+	border: none;
+	border-bottom: 1px solid var(--nebula-medium);
+	background: none;
+	padding: 0;
+	width: 100%;
+	max-width: 30rem;
+	text-align: center;
+	outline: none;
+	transition: all 120ms ease-in-out;
+}
+
+input:focus {
+	border-bottom: 2px solid var(--nebula-dark);
+}
+
+button {
+	appearance: none;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+	font-weight: inherit;
+	text-align: center;
+	text-decoration: none;
+	color: var(--nebula-dark);
+	background-color: var(--tidal-light);
+	border-radius: 2px;
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--nebula-light);
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+	height: 5.4rem;
+	line-height: calc(5.4rem - 2px);
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	padding: 0 1em; /* ems for relative sizing */
+	margin: 0;
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	box-sizing: border-box;
+	max-width: 100%;
+	outline: none;
+	transition: all 120ms ease-in-out;
+}
+
+@media screen and (min-width: 600px) {
+	button {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	button {
+		font-size: 2.4rem;
+	}
+}
+
+button:hover,
+button:focus {
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}

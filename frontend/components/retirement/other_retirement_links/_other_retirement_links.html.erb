@@ -1,7 +1,7 @@
 <%
 text ||= 'View a random retirement'
 
-if Retirement.any?
+if Retirement.count > 1
   random_retirement_hash_id =
     if @retirement.persisted?
       Retirement.where.not(id: @retirement.id).random.hashid

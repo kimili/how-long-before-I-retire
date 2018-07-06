@@ -1,14 +1,34 @@
 @import "../../../init/config/colors.css";
 
-.random-retirement {
+.other_retirement_links {
 	text-align: center;
 	padding-top: 4rem;
 	margin-top: 4rem;
 	position: relative;
 }
 
-.random-retirement::before,
-.random-retirement::after {
+.other_retirement_links a {
+	display: inline-block;
+	margin: 0 0 1rem;
+}
+
+.other_retirement_links .divider {
+	display: none;
+}
+
+@media screen and (min-width: 600px) {
+	.other_retirement_links a {
+		width: auto;
+		margin: 0;
+	}
+	.other_retirement_links .divider {
+		display: inline-block;
+		margin: 1rem;
+	}
+}
+
+.other_retirement_links::before,
+.other_retirement_links::after {
 	content: "";
 	display: block;
 	position: absolute;
@@ -17,14 +37,14 @@
 	transform-origin: center;
 }
 
-.random-retirement::before {
+.other_retirement_links::before {
 	top: -8px;
 	width: 8px;
 	height: 18px;
 	background: var(--nebula-dark);
 }
 
-.random-retirement::after {
+.other_retirement_links::after {
 	width: 8px;
 	top: -5px;
 	height: 8px;

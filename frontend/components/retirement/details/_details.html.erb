@@ -1,0 +1,20 @@
+<section class="retirement-details">
+  <% if @retirement.retired? %>
+  <h1 class="yay">
+    Yay, You’re Retired!
+  </h1>
+  <p>
+    <%= retirement_name %>, go out and enjoy your sweet freedom from the grind of work!
+  </p>
+<% else %>
+  <h1>
+    <%= time_difference_from_now @retirement.retirement_date %>
+  </h1>
+  <p>
+    <%= retirement_name %>, that’s how long you've got until you retire!
+  </p>
+  <p class="score">
+    Your RetireCount™ today is <strong><%= time_difference_from_now(@retirement.retirement_date, :score) %></strong>
+  </p>
+<% end %>
+</section>

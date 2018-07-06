@@ -6,7 +6,7 @@ class Retirement < ApplicationRecord
   validates :name, presence: true, length: { maximum: 255 }
   validate :retirement_date_is_valid_date
 
-  scope :random, -> { order('RANDOM()').limit(1).first }
+  scope :random, -> { order(Arel.sql('RANDOM()')).limit(1).first }
 
   def retired?
     Time.current > retirement_date

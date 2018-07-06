@@ -8,6 +8,10 @@ random_retirement_hash_id =
   end
 %>
 
-<p class="random-retirement">
+<p class="other_retirement_links">
   <%= link_to text, retirement_url(id: random_retirement_hash_id), rel: 'nofollow' %>
+  <% if local_assigns[:show_new] %>
+    <span class="divider">&middot;</span>
+    <%= link_to 'Get your retirement countdown', root_url %>
+  <% end %>
 </p>

@@ -17,11 +17,11 @@ module RetirementsHelper
         if format == :score
           delta
         else
-          "#{delta} #{delta == 1 ? interval : interval.pluralize}"
+          "<strong>#{delta}</strong> #{delta == 1 ? interval : interval.pluralize}"
         end
     end
     return components.join('-') if format == :score
-    components.to_sentence
+    components.join('<br>').html_safe
   end
 end
 

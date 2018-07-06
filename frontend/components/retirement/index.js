@@ -1,2 +1,3 @@
 import "./form";
-import "./random_link";
+import "./details";
+import "./other_retirement_links";

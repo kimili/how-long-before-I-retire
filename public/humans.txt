@@ -1,0 +1,14 @@
+/* SITE */
+
+	Design and Development: Michael Bester
+	Contact: michael [at] kimili.com
+	Twitter: @mibester
+	From: Salem, Massachusetts, USA
+
+/* THANKS */
+
+	Confetti Animation: J. Scott Smith
+	Website: https://damnthat.tv
+
+	Animation Framework: Jack Doyle, Greensock
+	Twitter: @greensock

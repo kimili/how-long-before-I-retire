@@ -1,11 +1,11 @@
 module ApplicationHelper
 
-  def site_name
-    'How Long Before I Retire?'
+  def page_url
+    request.original_url
   end
 
   def encoded_page_url
-    URI.encode request.original_url
+    URI.encode page_url
   end
 
   def component(component_name, *args, &block)

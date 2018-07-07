@@ -5,6 +5,11 @@ en:
         create: "Gimme My Countdown!"
         update: "Gimme My Countdown!"
 
+  site_name: How Long Before I Retire?
+  site_slogan: Count Down to Calling it Quits
+
+  site_description: Count down the days until you can call it quits.
+
   share_text:
     retired: Yay, I’m retired! Find out your count down to calling it quits.
     not_retired: '%{countdown}. That’s how long until I retire. What’s your count down to calling it quits?'

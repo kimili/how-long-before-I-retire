@@ -33,15 +33,15 @@ button {
 	font-weight: 700;
 	text-align: center;
 	text-decoration: none;
-	color: var(--nebula-dark);
-	background-color: var(--tidal-light);
-	border-radius: 2px;
+	color: var(--blue-pale);
+	background-color: var(--blue-medium);
+	border-radius: 3px;
 	border-style: solid;
 	border-width: 1px;
 	border-color: var(--nebula-light);
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 	height: 5.4rem;
-	line-height: 5.5rem; /* The font needs a little x-height adjustment */
+	line-height: 5.2rem; /* The font needs a little x-height adjustment */
 	user-select: none;
 	vertical-align: middle;
 	white-space: nowrap;

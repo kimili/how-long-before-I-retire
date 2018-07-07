@@ -1,8 +1,11 @@
 :root {
-	--tidal-light: hsl(53, 91%, 87%);
-	--tidal: hsl(53, 73%, 79%);
-	--tidal-medium: hsl(53, 53%, 69%);
-	--tidal-dark: hsl(53, 38%, 52%);
+	--base: hsl(212, 100%, 100%);
+
+	--blue-pale: hsl(212, 80%, 99%);
+	--blue-light: hsl(212, 98%, 88%);
+	--blue: hsl(212, 87%, 69%);
+	--blue-medium: hsl(212, 66%, 50%);
+	--blue-dark: hsl(212, 50%, 40%);
 
 	--nebula-light: hsl(217, 37%, 91%);
 	--nebula: hsl(217, 21%, 82%);

@@ -1,10 +1,11 @@
+@import "../../../init/config/colors.css";
+
 header[role="banner"] {
 	margin: 0 0 2rem;
 	padding: 1rem 1.5rem 3rem;
 	text-align: center;
 	position: relative;
 	overflow: hidden;
-	z-index: 2;
 }
 
 header[role="banner"]::after {
@@ -13,12 +14,9 @@ header[role="banner"]::after {
 	width: 2400px;
 	height: 2200px;
 	border-radius: 99999px;
-	background: linear-gradient(
-		180deg,
-		hsla(217, 11%, 54%, 0.16),
-		hsla(217, 11%, 54%, 0.1)
-	);
-	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+	background: linear-gradient(175deg, var(--blue) 75%, var(--blue-light));
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+	border: 1px solid var(--blue);
 	bottom: 5px;
 	left: 50%;
 	transform: translateX(-50%);

@@ -25,30 +25,3 @@
 		margin: 1rem;
 	}
 }
-
-/* .other_retirement_links::before,
-.other_retirement_links::after {
-	content: "";
-	display: block;
-	position: absolute;
-	left: 50%;
-	transform: translateX(-50%) rotate(-15deg);
-	transform-origin: center;
-}
-
-.other_retirement_links::before {
-	top: -8px;
-	width: 8px;
-	height: 18px;
-	background: var(--nebula-dark);
-}
-
-.other_retirement_links::after {
-	width: 8px;
-	top: -5px;
-	height: 8px;
-	border-radius: 8px;
-	background-color: var(--nebula-dark);
-	border: 2px solid var(--nebula-dark);
-	box-shadow: 0 0 0 1px var(--tidal), 0 0 0 3px #fff inset;
-} */

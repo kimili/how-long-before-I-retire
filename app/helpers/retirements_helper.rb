@@ -10,7 +10,7 @@ module RetirementsHelper
     %w[year month day].each do |interval|
       # For each interval type, if the amount of time remaining is greater than
       # one unit, calculate how many units fit into the remaining time.
-      next if format == :sentence && distance_in_seconds < 1.send(interval)
+      next if (format == :sentence || format == :header) && distance_in_seconds < 1.send(interval)
       delta = (distance_in_seconds / 1.send(interval)).floor
       distance_in_seconds -= delta.send(interval)
       components <<

@@ -58,5 +58,3 @@ node_modules/
 yarn-debug.log*
 .yarn-integrity
 
-# Ignore frontend lib files
-/frontend/lib

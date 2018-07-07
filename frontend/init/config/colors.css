@@ -2,6 +2,7 @@
 	--base: hsl(212, 100%, 100%);
 
 	--blue-pale: hsl(212, 80%, 99%);
+	--blue-pale-translucent: hsla(212, 80%, 99%, 0.97);
 	--blue-light: hsl(212, 98%, 88%);
 	--blue: hsl(212, 87%, 69%);
 	--blue-medium: hsl(212, 66%, 50%);

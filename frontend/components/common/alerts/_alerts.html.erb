@@ -1,0 +1,14 @@
+<% return if alerts.blank? %>
+
+<% alerts.each do |alert| %>
+  <div class="alert -<%= alert[:type] %>">
+    <p class="alert--message">
+        <%= alert[:message] %>
+    </p>
+    <div class="alert--actions">
+      <button type="button" class="close button-secondary -small -round" aria-label="<%= t('dismiss') %>">
+        <img src="<%= asset_pack_path('components/common/alerts/images/close.svg') %>" alt="">
+      </button>
+    </div>
+  </div>
+<% end %>

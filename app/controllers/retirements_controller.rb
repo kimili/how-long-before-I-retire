@@ -6,7 +6,7 @@ class RetirementsController < ApplicationController
   def create
     @retirement = Retirement.new retirement_params
     if @retirement.save
-      flash[:notice] = "Here's your Retirement Countdown!"
+      flash[:notice] = t('alerts.new_retirement')
       redirect_to retirement_url id: @retirement.hashid
     else
       render 'pages/home'

@@ -26,6 +26,11 @@ body {
 	grid-template-rows: 1fr auto;
 }
 
+body.noscroll {
+	overflow: hidden;
+	-webkit-overflow-scrolling: auto;
+}
+
 footer[role="contentinfo"] {
 	grid-row-start: 2;
 	grid-row-end: 3;

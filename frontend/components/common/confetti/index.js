@@ -33,6 +33,8 @@ class ConfettiCannon {
     if (!this.canvas) {
       return;
     }
+
+    this.body = document.querySelector("body");
     this.dpr = window.devicePixelRatio || 1;
     this.ctx = this.canvas.getContext("2d");
     this.ctx.scale(this.dpr, this.dpr);
@@ -69,7 +71,11 @@ class ConfettiCannon {
     this.setCanvasSize();
 
     // fire off for a demo
-    this.timer = setTimeout(this.handleMouseup, 1000);
+    this.timers = [
+      setTimeout(this.handleMouseup, 1000),
+      setTimeout(this.handleMouseup, 1400),
+      setTimeout(this.handleMouseup, 1800)
+    ];
   }
 
   setupListeners() {
@@ -80,9 +86,9 @@ class ConfettiCannon {
     window.addEventListener("mousedown", this.handleMousedown);
     window.addEventListener("mouseup", this.handleMouseup);
     window.addEventListener("mousemove", this.handleMousemove);
-    window.addEventListener("touchstart", this.handleTouchstart);
-    window.addEventListener("touchend", this.handleMouseup);
-    window.addEventListener("touchmove", this.handleTouchmove);
+    window.addEventListener("touchstart", this.handleTouchstart, false);
+    window.addEventListener("touchend", this.handleMouseup, false);
+    window.addEventListener("touchmove", this.handleTouchmove, false);
     window.addEventListener("resize", this.setCanvasSize);
   }
 
@@ -94,7 +100,7 @@ class ConfettiCannon {
   }
 
   handleMousedown(event) {
-    clearTimeout(this.timer);
+    this.timers.forEach(timer => clearTimeout(timer));
     const x = event.clientX * this.dpr;
     const y = event.clientY * this.dpr;
 
@@ -106,8 +112,9 @@ class ConfettiCannon {
   }
 
   handleTouchstart(event) {
-    clearTimeout(this.timer);
+    this.timers.forEach(timer => clearTimeout(timer));
     event.preventDefault();
+    this.body.classList.add("noscroll");
     const x = event.touches[0].clientX * this.dpr;
     const y = event.touches[0].clientY * this.dpr;
     this.vector[0] = {
@@ -132,6 +139,8 @@ class ConfettiCannon {
     const particles = length / 5 + 5;
     const velocity = length * 10;
     this.addConfettiParticles(particles, angle, velocity, x0, y0);
+
+    this.body.classList.remove("noscroll");
   }
 
   handleMousemove(event) {

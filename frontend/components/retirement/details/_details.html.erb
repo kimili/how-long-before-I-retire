@@ -6,6 +6,8 @@
   <p>
     <%= retirement_name %>, go out and enjoy your sweet freedom from the grind of work!
   </p>
+
+  <%= component 'common/confetti' %>
 <% else %>
   <h1>
     <%= time_difference_from_now @retirement.retirement_date %>

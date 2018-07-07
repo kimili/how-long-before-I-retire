@@ -19,9 +19,8 @@ body {
 	font-variant-numeric: oldstyle-nums;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
-	/* background-image: linear-gradient(25deg, #c5dada, #d0e2c7, #d8eab4, #e0f2a0); */
-	/* background-image: linear-gradient(-25deg, #c5dada, #d0e2c7, #d8eab4, #EFFDBC); */
-	/* background-image: linear-gradient(-25deg, rgb(189, 211, 119), rgb(224, 242, 160), rgb(239, 253, 188)); */
+	user-select: none;
+	overflow: hidden;
 	background-color: var(--tidal);
 	min-height: 100%;
 	display: grid;

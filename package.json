@@ -26,6 +26,8 @@
   "dependencies": {
     "@rails/webpacker": "3.5",
     "flatpickr": "^4.5.1",
+    "gsap": "^2.0.1",
+    "lodash": "^4.17.10",
     "normalize.css": "^8.0.0"
   },
   "devDependencies": {

@@ -8,7 +8,14 @@
   },
 
   "rules": {
-    "prettier/prettier": "error"
+	"prettier/prettier": "error",
+	"no-underscore-dangle": 0,
+	"no-new": 0,
+	"no-param-reassign": ["error", { "props": false }],
+	"prefer-destructuring": ["error", {"object": false, "array": false}],
+	"no-empty": ["error", { "allowEmptyCatch": true }],
+	"no-unused-expressions": ["error", { "allowShortCircuit": true }],
+	"array-callback-return": 0
   },
 
   "parser": "babel-eslint",

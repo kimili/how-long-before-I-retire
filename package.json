@@ -10,7 +10,7 @@
       "eslint",
       "git add"
     ],
-    "frontend/**/*.js": [
+    "frontend/components/**/*.js": [
       "prettier --write",
       "eslint",
       "git add"

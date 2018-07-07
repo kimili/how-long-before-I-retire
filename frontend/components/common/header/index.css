@@ -4,6 +4,7 @@ header[role="banner"] {
 	text-align: center;
 	position: relative;
 	overflow: hidden;
+	z-index: 2;
 }
 
 header[role="banner"]::after {
@@ -14,8 +15,8 @@ header[role="banner"]::after {
 	border-radius: 99999px;
 	background: linear-gradient(
 		180deg,
-		hsla(180, 11%, 54%, 0.14),
-		hsla(180, 11%, 54%, 0.08)
+		hsla(217, 11%, 54%, 0.16),
+		hsla(217, 11%, 54%, 0.1)
 	);
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
 	bottom: 5px;
@@ -32,6 +33,10 @@ header[role="banner"] h1 {
 	display: inline-block;
 	border: none;
 	max-width: 80vw;
+}
+
+.branding::after {
+	display: none;
 }
 
 .branding img {

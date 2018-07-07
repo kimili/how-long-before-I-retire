@@ -10,9 +10,11 @@ input {
 	display: inline-block;
 	border: none;
 	border-bottom: 1px solid var(--nebula-medium);
+	border-radius: 0;
 	background: none;
 	padding: 0;
 	width: 100%;
+	min-width: 16rem;
 	max-width: 30rem;
 	text-align: center;
 	outline: none;
@@ -68,7 +70,12 @@ button {
 	}
 }
 
-button:hover,
+@media (hover: hover) {
+	button:hover {
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+	}
+}
+
 button:focus {
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }

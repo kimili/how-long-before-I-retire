@@ -10,7 +10,7 @@
   <%= component 'common/confetti' %>
 <% else %>
   <h1>
-    <%= time_difference_from_now @retirement.retirement_date %>
+    <%= time_difference_from_now @retirement.retirement_date, :header %>
   </h1>
   <p>
     <%= retirement_name %>, that’s how long you've got until you retire!

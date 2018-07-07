@@ -1,0 +1,18 @@
+
+<ul class="share-widget">
+  <li class="share-widget__link facebook">
+    <a href="https://www.facebook.com/sharer/sharer.php?s=100&amp;t=<%= encoded_share_text %>&amp;u=<%= encoded_page_url %>
+    <%# &amp;[images][0]=<%= share_image_url % >  %>" title="Post this page to Facebook" rel="nofollow" data-share-service="facebook">
+      <span class="network">
+        <image src="<%= asset_pack_path('images/social/facebook.svg') %>" alt="Facebook">
+      </span>
+    </a>
+  </li>
+  <li class="share-widget__link twitter">
+    <a href="https://twitter.com/intent/tweet?text=<%= encoded_share_text %>&amp;url=<%= encoded_page_url %>" title="Tweet this page" rel="nofollow" data-share-service="twitter">
+      <span class="network">
+        <image src="<%= asset_pack_path('images/social/twitter.svg') %>" alt="Twitter">
+      </span>
+    </a>
+  </li>
+</ul>

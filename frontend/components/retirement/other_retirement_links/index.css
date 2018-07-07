@@ -2,7 +2,6 @@
 
 .other_retirement_links {
 	text-align: center;
-	padding-top: 4rem;
 	margin-top: 4rem;
 	position: relative;
 }
@@ -27,7 +26,7 @@
 	}
 }
 
-.other_retirement_links::before,
+/* .other_retirement_links::before,
 .other_retirement_links::after {
 	content: "";
 	display: block;
@@ -52,4 +51,4 @@
 	background-color: var(--nebula-dark);
 	border: 2px solid var(--nebula-dark);
 	box-shadow: 0 0 0 1px var(--tidal), 0 0 0 3px #fff inset;
-}
+} */

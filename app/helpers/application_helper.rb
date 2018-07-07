@@ -4,6 +4,10 @@ module ApplicationHelper
     'How Long Before I Retire?'
   end
 
+  def encoded_page_url
+    URI.encode request.original_url
+  end
+
   def component(component_name, *args, &block)
     locals = args.extract_options!
     render("/components/#{component_name}/#{component_name.split('/').last}.html.erb", locals, &block)

@@ -30,6 +30,9 @@ class ConfettiCannon {
   constructor() {
     // setup a canvas
     this.canvas = document.getElementById("confetti-cannon");
+    if (!this.canvas) {
+      return;
+    }
     this.dpr = window.devicePixelRatio || 1;
     this.ctx = this.canvas.getContext("2d");
     this.ctx.scale(this.dpr, this.dpr);

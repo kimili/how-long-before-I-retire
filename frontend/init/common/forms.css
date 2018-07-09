@@ -25,6 +25,12 @@ input:focus {
 	border-bottom: 2px solid var(--nebula-dark);
 }
 
+.flatpickr-calendar input {
+	text-align: left;
+	max-width: auto;
+	min-width: auto;
+}
+
 button {
 	appearance: none;
 	font-size: 1.6rem;

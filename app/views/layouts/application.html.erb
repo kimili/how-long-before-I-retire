@@ -14,7 +14,7 @@
     <meta property="og:url" content="<%= page_url %>">
     <meta property="og:type" content="website">
     <meta property="og:title" content="<%= content_for?(:title) ? "#{strip_tags(yield(:title))} - #{t('site_name')}" : "#{t('site_name')}" %>">
-    <meta property="og:image" content="<%= asset_pack_path('images/hlbir-og.png') %>">
+    <meta property="og:image" content="<%= asset_pack_url('images/hlbir-og.png') %>">
     <meta property="og:description" content="<%= t('site_description') %>">
     <meta property="og:site_name" content="<%= t('site_name') %>">
     <meta property="og:locale" content="en_US">
@@ -24,11 +24,11 @@
     <meta name="twitter:url" content="<%= page_url %>">
     <meta name="twitter:title" content="<%= content_for?(:title) ? "#{strip_tags(yield(:title))} - #{t('site_name')}" : "#{t('site_name')} - #{t('site_slogan')}" %>">
     <meta name="twitter:description" content="<%= t('site_description') %>">
-    <meta name="twitter:image" content="<%= asset_pack_path('images/hlbir-og.png') %>">
+    <meta name="twitter:image" content="<%= asset_pack_url('images/hlbir-twitter.png') %>">
 
     <meta itemprop="name" content="<%= content_for?(:title) ? "#{strip_tags(yield(:title))} - #{t('site_name')}" : "#{t('site_name')} - #{t('site_slogan')}" %>">
     <meta itemprop="description" content="<%= t('site_description') %>">
-    <meta itemprop="image" content="<%= asset_pack_path('images/hlbir-og.png') %>">
+    <meta itemprop="image" content="<%= asset_pack_url('images/hlbir-og.png') %>">
 
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>

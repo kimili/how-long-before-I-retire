@@ -5,6 +5,7 @@ footer[role="contentinfo"] {
 	width: 100%;
 	background: linear-gradient(0deg, var(--blue), var(--blue-light));
 	border-top: 1px solid var(--blue);
+	margin-top: 4rem;
 }
 
 footer[role="contentinfo"] .wrapper {
